@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    display: none;
+    padding: 50px;
+    margin-top: 60px;
+}
+section h1{
+    font-size: 5vh;
+}
+section h2 {
+    margin-top: 0;
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+}
+#info ul{
+    color: #002855;
+    text-decoration: none;
+}
+
+.central{
+    margin: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.Dados h3{
+    color: #002855;
+}
+
+@media only screen and (max-width: 1200px) {
+  .central {
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+}
+@media only screen and (max-width: 920px) {
+    .central {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    #info{
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
